@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/colorBackground3"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tripHistoryItemName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Trip Name"
+                android:textColor="@color/colorTextOnBG3"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:paddingLeft="24dp"/>
+
+            <TextView
+                android:id="@+id/tripHistoryItemStartDate"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Start date:"
+                android:textColor="@color/colorTextOnBG3"
+                android:textAlignment="textEnd"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tripHistoryItemCountry"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="to Country"
+                android:textColor="@color/colorTextOnBG3"
+                android:textStyle="italic"
+                android:paddingLeft="24dp"/>
+
+            <TextView
+                android:id="@+id/tripHistoryItemEndDate"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="End date:"
+                android:textColor="@color/colorTextOnBG3"
+                android:textAlignment="textEnd"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

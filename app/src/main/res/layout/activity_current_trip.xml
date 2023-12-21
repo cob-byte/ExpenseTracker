@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrentTripActivity"
+    android:background="@color/colorBackground1">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCurrentTrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        app:menu="@menu/expenses_tracker_menu">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarCurrentTrip"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/currentTripName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trip name"
+                android:textColor="@color/colorTextOnBG1"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/currentTripCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trip country"
+                android:textColor="@color/colorTextOnBG1"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:layout_below="@id/currentTripName"
+                />
+
+            <TextView
+                android:id="@+id/currentTripStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextOnBG1"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:layout_below="@id/currentTripCountry"
+                android:text="Date"/>
+
+            <TextView
+                android:id="@+id/currentTripStaticExpensesTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextOnBG1"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/currentTripStartDate"
+                android:text="List of expenses:"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/currentTripRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/currentTripStaticExpensesTV"
+                android:background="@color/colorBackground2"
+                android:layout_marginTop="8dp"
+                />
+
+            <Button
+                android:id="@+id/currentTripChartButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/currentTripRecyclerView"
+                android:layout_marginTop="24dp"
+                android:text="Spending pie chart"
+                android:background="@color/colorBackground2"
+                android:textColor="@color/colorTextOnBG2"/>
+
+            <Button
+                android:id="@+id/currentTripEndButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/currentTripRecyclerView"
+                android:layout_marginTop="80dp"
+                android:text="End Trip"
+                android:background="@color/colorBackground2"
+                android:textColor="@color/colorTextOnBG2"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

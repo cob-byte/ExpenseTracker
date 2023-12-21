@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuAddExpenseET"
+        android:title="Add new expense"
+        android:icon="@drawable/home_drawer_icon">
+    </item>
+    <item android:id="@+id/menuInviteParticipantsET"
+        android:title="Invite participants"
+        android:icon="@drawable/user_profile_drawer_icon">
+    </item>
+</menu>

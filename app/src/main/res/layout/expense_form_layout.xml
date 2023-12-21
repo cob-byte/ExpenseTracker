@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="24dp"
+    android:background="@color/colorBackground1">
+
+            <TextView
+                android:id="@+id/expenseFormStaticTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add expense form"
+                android:textSize="26dp"
+                android:textColor="@color/colorTextOnBG1"
+                android:layout_centerHorizontal="true"/>
+
+
+            <EditText
+                android:id="@+id/expenseFormName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name/description"
+                android:textColor="@color/colorTextOnBG1"
+                android:textColorHint="@color/colorHints"
+                android:layout_below="@id/expenseFormStaticTitle"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/expenseFormPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cost"
+                android:textColor="@color/colorTextOnBG1"
+                android:textColorHint="@color/colorHints"
+                android:inputType="numberDecimal"
+                android:layout_below="@id/expenseFormName"
+                android:layout_marginTop="16dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/expensesFromSpinnerRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expenseFormPrice"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select category"
+                    android:textColor="@color/colorHints"/>
+
+                <Spinner
+                    android:id="@+id/expenseFormCategorySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginTop="32dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Expense consider:"
+                    android:textColor="@color/colorHints"
+                    android:layout_below="@id/expenseFormCategorySpinner"
+                    android:layout_marginTop="16dp"/>
+
+                <RadioGroup
+                    android:id="@+id/expenseFormRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/expenseFormCategorySpinner"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginLeft="16dp">
+
+                    <RadioButton
+                        android:id="@+id/expenseFormRadioButtonIndividual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Individual"
+                        android:textColor="@color/colorTextOnBG1"/>
+
+                    <RadioButton
+                        android:id="@+id/expenseFormRadioButtonGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Group"
+                        android:textColor="@color/colorTextOnBG1"/>
+
+                </RadioGroup>
+            </RelativeLayout>
+
+</RelativeLayout>
+
+
+

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonProfileActivity"
+    android:background="@color/colorBackground1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/personProfilePicture"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <TextView
+                android:id="@+id/personProfileUsernameTW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personProfilePicture"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:text="Username"
+                android:textColor="@color/colorTextOnBG1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/personProfilePhoneNumberTW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personProfileUsernameTW"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:text="Phone number"
+                android:textColor="@color/colorTextOnBG1"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                />
+
+            <TextView
+                android:id="@+id/personProfileFixedDescription"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personProfilePhoneNumberTW"
+                android:layout_marginTop="35dp"
+                android:layout_centerHorizontal="true"
+                android:text="Description:"
+                android:textColor="@color/colorTextOnBG2"
+                android:textSize="16sp"
+                android:background="@color/colorBackground2"
+                android:padding="15dp"
+                />
+
+            <TextView
+                android:id="@+id/personProfileDescriptionTW"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personProfileFixedDescription"
+                android:layout_centerHorizontal="true"
+                android:text="Hello!"
+                android:textColor="@color/colorTextOnBG2"
+                android:textSize="16sp"
+                android:background="@color/colorBackground2"
+                android:padding="15dp"
+                />
+
+            <TextView
+                android:id="@+id/personProfileFixedNumOfTrips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personProfileDescriptionTW"
+                android:layout_marginTop="50dp"
+                android:text="Number of trips: "
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/colorTextOnBG1"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                />
+
+            <TextView
+                android:id="@+id/personProfileNumOfTripsTW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/personProfileFixedNumOfTrips"
+                android:layout_below="@id/personProfileDescriptionTW"
+                android:layout_marginTop="49dp"
+                android:textSize="18sp"
+                android:text="0"
+                android:textColor="@color/colorTextOnBG1"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/personProfileFixedGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personProfileFixedNumOfTrips"
+                android:layout_marginTop="20dp"
+                android:text="Gender: "
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/colorTextOnBG1"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                />
+
+            <TextView
+                android:id="@+id/personProfileGenderTW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/personProfileFixedGender"
+                android:layout_below="@id/personProfileFixedNumOfTrips"
+                android:layout_marginTop="19dp"
+                android:textSize="18sp"
+                android:text="It"
+                android:textColor="@color/colorTextOnBG1"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/personProfileFixedCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personProfileFixedGender"
+                android:layout_marginTop="20dp"
+                android:text="Country: "
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/colorTextOnBG1"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                />
+
+            <TextView
+                android:id="@+id/personProfileCountryTW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/personProfileFixedCountry"
+                android:layout_below="@id/personProfileFixedGender"
+                android:layout_marginTop="19dp"
+                android:textSize="18sp"
+                android:text="Nowhere"
+                android:textColor="@color/colorTextOnBG1"
+                android:layout_marginLeft="5dp"
+                />
+
+            <Button
+                android:id="@+id/personProfileSendRequestBTN"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/personProfileCountryTW"
+                android:background="@color/colorBackground2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:textSize="16dp"
+                android:textColor="@color/colorTextOnBG2"
+                android:text="Send Friend Request"/>
+
+            <Button
+                android:id="@+id/personProfileDeclineRequestBTN"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/personProfileSendRequestBTN"
+                android:background="@color/colorBackground2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/colorTextOnBG2"
+                android:text="Decline Friend Request" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

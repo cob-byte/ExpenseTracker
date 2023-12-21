@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Group Expense Tracker</string>
+    <string name="drawer_open">Drawer opened!</string>
+    <string name="drawer_close">Drawer closed!</string>
+    <string name="channel_name">TN_channel</string>
+    <string name="channel_description">Trip notification channel</string>
+</resources>

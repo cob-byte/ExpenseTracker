@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindTravelersActivity"
+    android:background="@color/colorBackground1">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarFindTravelers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/findTravelersInfoTW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarFindTravelers"
+        android:padding="5dp"
+        android:text="Search for friends and travel together."
+        android:textColor="@color/colorTextOnBG1"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/findTravelerSearchTextBar"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/findTravelersInfoTW"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageButton
+        android:id="@+id/findTravelerSearchButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/findTravelersInfoTW"
+        android:layout_toRightOf="@id/findTravelerSearchTextBar"
+        android:src="@drawable/find_traveler_search_icon"
+        android:background="@color/colorBackground2"
+        android:layout_marginTop="5dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/findTravelerSearchButton">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/findTravelerRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/colorBackground2"
+            android:isScrollContainer="true"
+            />
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

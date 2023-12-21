@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:background="@color/colorBackground1">
+
+    <TextView
+        android:id="@+id/tripCreatorDialogStaticTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trip info"
+        android:textColor="@color/colorTextOnBG1"
+        android:textSize="24dp"/>
+
+    <EditText
+        android:id="@+id/tripCreatorDialogTripName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter trip name"
+        android:textColor="@color/colorTextOnBG1"
+        android:textColorHint="@color/colorHints"
+        android:layout_below="@+id/tripCreatorDialogStaticTitle"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select the country you are visiting:"
+        android:textColor="@color/colorHints"
+        android:layout_below="@id/tripCreatorDialogTripName"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/tripCreatorDialogTripCountry"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/tripCreatorDialogTripName"
+        android:layout_marginTop="35dp"
+        android:spinnerMode="dropdown"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currency: "
+        android:textSize="16dp"
+        android:textColor="@color/colorHints"
+        android:layout_below="@+id/tripCreatorDialogTripCountry"
+        android:layout_marginTop="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/tripCreatorDialogTripCurrency"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tripCreatorDialogTripCountry"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:spinnerMode="dropdown"
+        android:layout_marginBottom="8dp"/>
+
+</RelativeLayout>

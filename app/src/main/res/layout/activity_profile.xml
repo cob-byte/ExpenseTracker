@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@color/colorBackground1">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <TextView
+                android:id="@+id/profileUsernameTW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profilePicture"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:text="Username"
+                android:textColor="@color/colorTextOnBG1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/profilePhoneNumberTW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileUsernameTW"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:text="Phone number"
+                android:textColor="@color/colorTextOnBG1"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                />
+
+            <TextView
+                android:id="@+id/profileFixedDescription"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profilePhoneNumberTW"
+                android:layout_marginTop="35dp"
+                android:layout_centerHorizontal="true"
+                android:text="Description:"
+                android:textColor="@color/colorTextOnBG2"
+                android:textSize="16sp"
+                android:background="@color/colorBackground2"
+                android:padding="15dp"
+                />
+
+            <TextView
+                android:id="@+id/profileDescriptionTW"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileFixedDescription"
+                android:layout_centerHorizontal="true"
+                android:text="Hello!"
+                android:textColor="@color/colorTextOnBG2"
+                android:textSize="16sp"
+                android:background="@color/colorBackground2"
+                android:padding="15dp"
+                />
+
+            <TextView
+                android:id="@+id/profileFixedNumOfTrips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileDescriptionTW"
+                android:layout_marginTop="50dp"
+                android:text="Number of trips: "
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/colorTextOnBG1"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                />
+
+            <TextView
+                android:id="@+id/profileNumOfTripsTW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/profileFixedNumOfTrips"
+                android:layout_below="@id/profileDescriptionTW"
+                android:layout_marginTop="49dp"
+                android:textSize="18sp"
+                android:text="0"
+                android:textColor="@color/colorTextOnBG1"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/profileFixedGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileFixedNumOfTrips"
+                android:layout_marginTop="20dp"
+                android:text="Gender: "
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/colorTextOnBG1"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                />
+
+            <TextView
+                android:id="@+id/profileGenderTW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/profileFixedGender"
+                android:layout_below="@id/profileFixedNumOfTrips"
+                android:layout_marginTop="19dp"
+                android:textSize="18sp"
+                android:text="It"
+                android:textColor="@color/colorTextOnBG1"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/profileFixedCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileFixedGender"
+                android:layout_marginTop="20dp"
+                android:text="Country: "
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/colorTextOnBG1"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                />
+
+            <TextView
+                android:id="@+id/profileCountryTW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/profileFixedCountry"
+                android:layout_below="@id/profileFixedGender"
+                android:layout_marginTop="19dp"
+                android:textSize="18sp"
+                android:text="Nowhere"
+                android:textColor="@color/colorTextOnBG1"
+                android:layout_marginLeft="5dp"
+                />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
